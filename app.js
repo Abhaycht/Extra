@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
   res.sendFile(__dirname + "/signup.html");
-});
+}
+       );
 
 app.post("/", function(req, res){
   var firstName = req.body.fName;
@@ -52,4 +53,6 @@ app.listen(3000, function(){
 })
 
 // 78e74955070c765bc921eccf408420b8-us7
-//
+
+//api key above
+
